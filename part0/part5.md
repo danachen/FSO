@@ -1,0 +1,5 @@
+Create a diagram depicting the situation where the user goes to the single page app version of the notes app at https://studies.cs.helsinki.fi/exampleapp/spa.
+
+title Going to a SPA
+
+Browser->server: executes JS code from server, adds HTML and displays
