@@ -1,8 +1,8 @@
-const Persons = (props) => {
+const Persons = ({persons, handleDelete}) => {
   return (
     <ul>
-      {props.filtered().map(person => {
-        return <p key={person.name}>{person.name} {person.phone}</p>
+      {persons.map(person => {
+        return <li className="person" key={person.id}><p key={person.name}>{person.name} {person.phone} <button onClick={handleDelete} value={person.id}>delete</button></p></li>
       })}
     </ul>
   )
